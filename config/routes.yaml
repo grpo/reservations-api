@@ -2,4 +2,7 @@ controllers:
     resource:
         path: ../src/Controller/
         namespace: App\Controller
+        prefix: /api/v1
     type: attribute
+api_login:
+    path: /api/login
