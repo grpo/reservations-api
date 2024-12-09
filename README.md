@@ -7,7 +7,8 @@ Develop a Room Booking System that includes REST API endpoints for:
 Users to book and track room bookings.
 Admins to manage room inventory.
 The system should implement authentication, asynchronous processing with RabbitMQ, and integration with a third-party API. It must include unit tests and at least one functional test.
-Requirements
+
+## Requirements
 1. REST API Endpoints
 Admin Endpoints
 Add a Room: Allow admins to add new rooms to the system.
@@ -31,19 +32,22 @@ Send booking details to a mock third-party API endpoint after confirming a booki
 5. Tests
 Unit Tests: Cover all business logic, including room management, booking logic, and authentication.
 Functional Test: Test a complete booking workflow, from user authentication to booking confirmation.
-Tech Stack
-Backend: PHP (preferably Laravel or Symfony).
-Queue: RabbitMQ for asynchronous task handling.
-Authentication: JSON Web Tokens (JWT).
-Testing: PHPUnit for unit and functional testing.
-Database: Use SQLite or MySQL.
-Evaluation Criteria
-Correct and secure implementation of authentication and role-based access control.
-Adherence to RESTful principles and best practices.
-Proper integration of RabbitMQ for async processing.
-Coverage and robustness of tests.
-Clear and well-structured code, following industry standards.
-Bonus Points
-Use Docker to simplify environment setup.
-Provide Swagger/OpenAPI documentation for the API.
-Include data validation and error handling in all endpoints
+
+## Tech Stack
+- Backend: PHP (preferably Laravel or Symfony).
+- Queue: RabbitMQ for asynchronous task handling.
+- Authentication: JSON Web Tokens (JWT).
+- Testing: PHPUnit for unit and functional testing.
+- Database: Use SQLite or MySQL.
+
+## Evaluation Criteria
+- [ ] Correct and secure implementation of authentication and role-based access control.
+- [ ] Adherence to RESTful principles and best practices.
+- [ ] Proper integration of RabbitMQ for async processing.
+- [ ] Coverage and robustness of tests.
+- [ ] Clear and well-structured code, following industry standards.
+
+## Bonus Points
+- [x] Use Docker to simplify environment setup.
+- [ ] Provide Swagger/OpenAPI documentation for the API.
+- [ ] Include data validation and error handling in all endpoints
