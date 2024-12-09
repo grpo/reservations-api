@@ -1,5 +1,6 @@
 services:
   php:
+    container_name: reservations-api-php
     build:
       context: ./docker/php8.3
     volumes:
@@ -15,6 +16,7 @@ services:
       - mysql
 
   mysql:
+    container_name: reservations-api-mysql
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -27,6 +29,7 @@ services:
       - db_data:/var/lib/mysql
 
   nginx:
+    container_name: reservations-api-nginx
     image: nginx:latest
     volumes:
       - ./:/var/www/html
