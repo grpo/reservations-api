@@ -63,9 +63,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->firstname;
     }
 
-    public function setFirstname(?string $firstname): void
+    public function setFirstname(?string $firstname): static
     {
         $this->firstname = $firstname;
+
+        return $this;
     }
 
     public function getLastname(): ?string
@@ -73,9 +75,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->lastname;
     }
 
-    public function setLastname(?string $lastname): void
+    public function setLastname(?string $lastname): static
     {
         $this->lastname = $lastname;
+
+        return $this;
     }
 
     public function getPhone(): ?string
@@ -83,9 +87,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->phone;
     }
 
-    public function setPhone(?string $phone): void
+    public function setPhone(?string $phone): static
     {
         $this->phone = $phone;
+
+        return $this;
     }
 
     /**
